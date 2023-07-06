@@ -1,0 +1,45 @@
+{
+	"name": "my Clojure app",
+	"build": {
+		"dockerfile": "Dockerfile"
+
+		},
+
+	//if you want to run a repl inside container
+	//"runArgs": [ "-p", "12345:12345" ],
+
+    "features": {
+	    "ghcr.io/devcontainers-contrib/features/clojure-asdf:2": {},
+		"ghcr.io/devcontainers-contrib/features/bash-command:1": {"command": "apt-get update && apt-get install rlwrap"},
+		"ghcr.io/devcontainers/features/python:1": {},
+		"ghcr.io/rocker-org/devcontainer-features/r-apt:0": {}
+
+
+},
+
+	//Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": { 
+			},
+			"extensions": 
+			[
+			// Add the IDs of extensions you want installed when the container is created.
+				"vscjava.vscode-java-pack",
+				"borkdude.clj-kondo",
+				"betterthantomorrow.calva"
+			]
+		}
+	},
+
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	//"postCreateCommand": ""
+
+	//"postStartCommand": "",
+
+	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode"
+}
