@@ -1,0 +1,6 @@
+{:deps {clj-python/libpython-clj {:mvn/version "2.024"}}
+ :aliases {
+           :jdk-17
+           {:jvm-opts ["--add-modules" "jdk.incubator.foreign"
+                       "--enable-native-access=ALL-UNNAMED"]}}
+ }
