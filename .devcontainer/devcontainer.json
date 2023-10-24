@@ -16,7 +16,7 @@
 
 
 },
-    "forwardPorts": ["12345"],
+    "forwardPorts": ["12345","7777"],
 	//Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
