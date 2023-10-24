@@ -1,6 +1,7 @@
-{:deps {clj-python/libpython-clj {:mvn/version "2.024"}}
+{:deps {clj-python/libpython-clj {:mvn/version "2.024"}
+        io.github.nextjournal/clerk {:mvn/version "0.15.957"}}
  :aliases {
            :jdk-17
            {:jvm-opts ["--add-modules" "jdk.incubator.foreign"
-                       "--enable-native-access=ALL-UNNAMED"]}}
- }
+                       "--enable-native-access=ALL-UNNAMED"]}}}
+ 
